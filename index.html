@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<input id="myInput" type="text" placeholder="Search..">
+<br><br>
+
+<table>
+  <thead>
+  <tr>
+    <th>Latijn</th>
+    <th>Nederlands</th>
+  </tr>
+  </thead>
+  <tbody id="myTable">
+  <tr>
+    <td>a, ab + abl</td>
+    <td>1. weg van, van(af) 2. door (toedoen van)</td>
+  </tr>
+  <tr>
+    <td>abeo (abire)</td>
+    <td>weggaan perf. van abire</td>
+  </tr>
+  <tr>
+    <td>abii, abitum</td>
+    <td>perf. van abire</td>
+  </tr>
+  <tr>
+    <td>ablatus</td>
+    <td>perf. pass van aufero</td>
+  </tr>
+  <tr>
+    <td>abstuli</td>
+    <td>perf. act. van aufero</td>
+  </tr>
+  <tr>
+    <td>absum (abesse)</td>
+    <td>afwezig zijn (perf. afui)</td>
+  </tr>
+  <tr>
+    <td>ac</td>
+    <td>en</td>
+  </tr>
+  <tr>
+    <td>accedo (accedere)</td>
+    <td>naderen, erbij komen</td>
+  </tr>
+  <tr>
+    <td>accendo (accendere)</td>
+    <td>in brand steken, aansteken perf. accendi, accensus</td>
+  </tr>
+  <tr>
+    <td>accido (accipere)</td>
+    <td>gebeuren perf. accidi</td>
+  </tr>
+  <tr>
+    <td>accipio (accipere)</td>
+    <td>1. ontvangen, verkrijgen 2. vernemen perf. accepi, acceptus</td>
+  </tr>
+  <tr>
+    <td>acer, acris</td>
+    <td>scherp, fel, hevig (acris, acre)</td>
+  </tr>
+  <tr>
+    <td>acies, aciei</td>
+    <td>slag(linie)</td>
+</tr>
+    <tr>
+        <td>actus</td>
+        <td>perf. pass. van ago</td>
+     </tr>
+     <tr>
+       <td>ad + acc</td>
+       <td>naar, tot, bij</td>
+     </tr>
+     <tr>
+       <td>addidi</td>
+       <td>perf. act. van addo</td>
+     </tr>
+     <tr>
+       <td>additus</td>
+       <td>per. pass. van addo</td>
+     </tr>
+     <tr>
+       <td>addo (addere)</td>
+       <td>toevoegen perf. addidi, additus</td>
+     </tr>
+     <tr>
+        <td>adduco (adducere)</td>
+        <td>brengen naar, brengen tot perf. adii, aditum</td>
+      </tr>
+      <tr>
+        <td>adeo (adire)</td>
+        <td>gaan naar, komen naar, zich wenden tot perf. adii, aditum</td>
+      </tr>
+      <tr>
+        <td>adeo (bijw.)</td>
+        <td>zozeer</td>
+      </tr>
+      <tr>
+        <td>adfui</td>
+        <td>perf. van adsum</td>
+      </tr>
+      <tr>
+        <td>adii, aditum</td>
+        <td>perf. van adeo</td>
+      </tr>
+      <tr>
+        <td>adhibeo</td>
+        <td>aanwenden, gebruiken perf. adhibui, adhibitus</td>
+      </tr>
+      <tr>
+        <td>adhuc</td>
+        <td>tot nu toe, nog</td>
+      </tr>
+      <tr>
+        <td>adicio (adicere)</td>
+        <td>toevoegen perf. adieci, adhibitus</td>
+      </tr>
+      <tr>
+        <td>aditus, aditus</td>
+        <td>toegang</td>
+      </tr>
+      <tr>
+        <td>adiuvo (adiuvare)</td>
+        <td>helpen</td>
+      </tr>
+      <tr>
+        <td>admitto (admittere)</td>
+        <td>toelaten perf. admisi, admissus</td>
+      </tr>
+      <tr>
+        <td>admoneo</td>
+        <td>1. eraan herinneren, erop wijzen aansporen perf. admonui, admonitus</td>
+        </tr>
+        <tr>
+        <td>admoveo</td>
+        <td>ergens heen brengen, voeren perf. admovi, admotus </td>
+        </tr>
+        <tr>
+        <td>adsum (adesse) </td>
+        <td>1. aanwezig zijn 2. helpen perf. adfui</td>
+        </tr>
+        <tr>
+        <td>adventus, adventus</td>
+        <td>aankomst</td>
+        </tr>
+        <tr>
+        <td>adversus (bijv. nw.)</td>
+        <td>1. gekeerd naar, (recht) tegenover (adversa, adversum) 2. ongunstig </td>
+        </tr>
+        <tr>
+        <td>adversus/adversum + acc. </td>
+        <td>1. tegen(over) 2. jegens </td>
+        </tr>
+        <tr>
+        <td>aeger, acgri</td>
+        <td>ziek (acgra, aegrum) </td>
+        </tr>
+        <tr>
+        <td>aegre (bijw) </td>
+        <td>met moeite</td>
+        </tr>
+        <tr>
+        <td>aequo (acquare) </td>
+        <td>gelijk maken, evenaren </td>
+        </tr>
+        <tr>
+        <td>acque (bijw.) </td>
+        <td>net zo, even(zeer) </td>
+        </tr>
+        <tr>
+        <td>acquus</td>
+        <td>1. gelijk, effen (acqua, aequum) 2. billijk 3. gunstig </td>
+        </tr>
+        <tr>
+        <td>aes, acris (onz.) </td>
+        <td>1. koper, brons 2. geld</td>
+        </tr>
+        <tr>
+        <td>aestimo (aestimare) </td>
+        <td>schatten, waard achten </td>
+        </tr>
+        <tr>
+        <td>aestus, aestus</td>
+        <td>1. hitte 2. branding</td>
+        </tr>
+        <tr>
+        <td>aetas, aetatis</td>
+        <td>tijd, leeftijd</td>
+        </tr>
+        <tr>
+        
+        <td>aeternus</td>
+        <td>eeuwig (aeterna, aeternum) </td>
+        </tr>
+        <tr>
+        <td>affectus, affectus </td>
+        <td>gemoedstoestand, stemming</td>
+        </tr>
+        <tr>
+        <td>affectus</td>
+        <td>perf. pass, van afficio</td>
+        </tr>
+        <tr>
+            <td>affero (afferre) </td>
+            <td>1. meebrengen, ergens heen brengen 2. overbrengen perf. attuli, allatus</td>
+        </tr>
+        <tr>
+            <td>afficio (afficere) </td>
+            <td>iemand iets aandoen perf. affeci, affectus</td>
+        </tr>
+        <tr>
+            <td>afui</td>
+            <td>perf. van absum</td>
+        </tr>
+        <tr>
+            <td>ager, agri</td>
+            <td>akker, land</td>
+        </tr>
+        <tr>
+            <td>aggredior (aggredi) </td>
+            <td>aanvallen perf. aggressus sum</td>
+        </tr>
+        <tr>
+            <td>agito (agitare) </td>
+            <td>1. opjagen 2. zich met iets bezighouden</td>
+        </tr>
+        <tr>
+            <td>agmen, agminis </td>
+            <td>stoet, colonne</td>
+        </tr>
+        <tr>
+            <td>agnosco (agnoscere) </td>
+            <td>1. erkennen 2. herkennen perf. agnovi, agnitus </td>
+        </tr>
+        <tr>
+            <td>ago (agère)</td>
+            <td>1. voeren, drijven 2. doen, verrichten 3- (be)handelen perf. egi, actus</td>
+        </tr>
+        
+  </tbody>
+</table>
+
+</body>
+</html>
